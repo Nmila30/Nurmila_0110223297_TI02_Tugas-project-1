@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Hello, Word</title>
+</head>
+
+<body> 
+<nav class="navbar navbar-expand-lg navbar-light bg-transparan fixed-top" id="mainNav">
+  <div class="container">
+    <div class="container-fluid">
+      <a class="navbar-brand font-weight-bold text-black" href="klinik.html">HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active js-scroll-tringger font-weight-bold  text-black"  href="index.html">DAFTAR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-tringger font-weight-bold  text-black" href="register.html">SPECIALIST</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">More</a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="testimoni.html">testimoni</a> <a class="dropdown-item" href="data FAQ.html">data FAQ</a> <a class="dropdown-item" href="bil.html">keterangan</a>
+               <div class="dropdown-divider">
+               </div> <a class="dropdown-item" href="#">Separated link</a>
+           </div>
+       </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold  text-black" href="admin.html">DOCTORS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold  text-black" href="Profil.html">PROFIL</a>
+          </li>
+        </ul>
+      </div>
+   </div>
+  </div>
+  </nav>
+
+   <div class="jumbotron">
+     <div class="container">
+       <h1 class="display-4">Selamat Datang <br> <span class="font-weight-bold">DI KLINIK GIGI KASIH BUNDA</span></h1>
+       <hr class="my-4">
+       <p class="lead">Kami Siap Melayani Anda Dengan Sepenuh Hati, Kepuasan pelanggan adalah kebahagian kami</p>
+       <a class="btn btn-primary btn-lg font-weight-bold" href="#" role="button">kunjungi</a>
+     </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+    <br></br>  
+    <div class="container">
+      <h1 class="display-4 text-center">ENTYR DATA PASIEN</h1>
+    </div>
+   </header>
+                <br>
+                <div class="container overflow-hidden text-center">
+                   <div class="row gx-5">
+                    <div class="col">
+                  <div class="p-3">Kunjungan NON BPJS</div>
+               </div>
+                  <div class="col">
+                    <div class="p-3">Kunjungan BPJS</div> 
+               </div>
+                 <div class="col">
+                   <div class="p-3">Status Kunjungan Pasien BPJS</div>
+                </div>
+              </div>
+          </div>
+               <form class="mt-5">
+                <div class="form-group row">
+                  <label for="text1" class="col-4 col-form-label">Nama Pasien</label> 
+                  <div class="col-8">
+                <input id="text1" name="text1" type="text" class="form-control">
+              </div>
+            </div>
+                  <div class="form-group row">
+                    <label for="text2" class="col-4 col-form-label">Tanggal</label> 
+                    <div class="col-8">
+                  <input id="text2" name="text2" type="text" class="form-control">
+                </div>
+              </div>
+                  <div class="form-group row">
+                     <label for="text2" class="col-4 col-form-label">No.Pendaftaran</label> 
+                    <div class="col-8">
+                   <input id="text2" name="text2" type="text" class="form-control">
+                 </div>
+               </div>
+                   <div class="form-group row">
+                     <label for="text2" class="col-4 col-form-label">POLI</label> 
+                   <div class="col-8">
+                     <input id="text2" name="text2" type="text" class="form-control">
+                  </div>
+                </div>
+                  <div class="form-group row">
+                    <label for="text2" class="col-4 col-form-label">No.RM</label> 
+                  <div class="col-8">
+                    <input id="text2" name="text2" type="text" class="form-control">
+                 </div>
+               </div>
+                  <div class="form-group row">
+                     <label for="text2" class="col-4 col-form-label">Dokter 2</label> 
+                     <div class="col-8">
+                       <input id="text2" name="text2" type="text" class="form-control">
+                    </div>
+                 </div>
+                 <div class="form-group row">
+                    <label class="col-4">Jenis Kelamin</label> 
+                    <div class="col-8">
+                      <div class="custom-control custom-radio custom-control-inline">
+                     <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="rabbit"> 
+                    <label for="radio_0" class="custom-control-label">Laki-laki</label>
+                  </div>
+                     <div class="custom-control custom-radio custom-control-inline">
+                       <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="duck"> 
+                       <label for="radio_1" class="custom-control-label">Perempuan</label>
+                   </div>
+                </div>
+             </div> 
+                 <div class="form-group row">
+                   <div class="offset-4 col-8">
+                    <button name="submit" type="submit" class="btn btn-primary">Tambahkan</button>
+                 </div>
+               </div>
+             </form>
+          </div>
+          <br></br>  
+           <div class="container">
+          <h1 class="display-4 text-center">SPECIALITS DENTAL CARE</h1>
+          <p class="lead"> gigimu memainkan peranan penting dalam keseharianmu. itu tidak hanya membantu Anda mengunyah dan memakan makanan Anda tetapi juga membingkai wajah Anda. setiap gigi yang hilang dapat berdampak besar pada kualitas hidup Anda </p>
+        </div>
+      </header>
+      <br></br>
+  <div class="card mb-3" style="max-width: 1200px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img class="d-block w-100" src="img/images.jpg.jpg"/>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Dental Implant</h5>
+          <p class="card-text">
+            Implan gigi (juga dikenal sebagai implan atau perlengkapan endosseous) adalah komponen bedah yang berinteraksi dengan tulang rahang atau tengkorak untuk menopang prostesis gigi seperti jembatan mahkota, gigi palsu, prostesis wajah, atau bertindak sebagai jangkar ortodontik. Dasar dari implan gigi modern adalah proses biologis yang disebut osseointegrasi, di mana bahan seperti titanium membentuk ikatan erat dengan tulang.
+          </p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3" style="max-width: 1200px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img class="d-block w-100" src="img/foto.jpg.jpg"/>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Laser Dentistry</h5>
+          <p class="card-text">
+            Laser gigi adalah jenis laser yang dirancang khusus untuk digunakan dalam bedah mulut atau kedokteran gigi. di Amerika Serikat, penggunaan laser pada gusi pertama kali disetujui oleh badan administrasi makanan dan obat-obatan pada awal tahun 1990-an, dan penggunaan pada jaringan keras seperti gigi pada tulang mandibula mendapat persetujuan pada tahun 1996. Beberapa varian laser gigi adalah digunakan dengan panjang gelombang yang berbeda dan ini berarti mereka lebih cocok untuk aplikasi yang berbeda.
+          </p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3" style="max-width: 1200px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img class="d-block w-100" src="img/photos.jpg.jpg"/>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">ortodontics</h5>
+          <p class="card-text">
+            ortodontik adalah spesialisasi kedokteran gigi yang berhubungan dengan pencegahan diagnosis dan koreksi malposisi gigi dan rahang. Ortodontik juga dapat berfokus pada modifikasi pertumbuhan wajah, yang dikenal sebagai ortopedi dentofasial.
+          </p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <br></br>  
+  <div class="container">
+    <h1 class="display-4 text-center">ADD DATA TESTIMONIAL</h1>
+  </div>
+</header>
+      <br></br>
+        <form>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Rating</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div> 
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Keterangan</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3">
+                </div>
+              </div>
+              <div class="mb-3">
+                <select class="form-select text-center" required aria-label="select example">
+                  <option value="">Nama Testimonial</option>
+                  <option value="1">Admin1</option>
+                  <option value="2">Admin2</option>
+                  <option value="3">Admin3</option>
+                </select>
+                <br></br>
+                <button type="submit" class="btn btn-primary">+ Add Data</button>
+               </form>
+
+               <br></br>
+         <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+            <img class="d-block w-100" src="img/periks.jpg.jpg"/>
+           <div class="card-body">
+            <h2>Admin 1</h2>
+           </div>
+         </div>
+      </div>
+    <div class="col">
+      <div class="card">
+        <img class="d-block w-100" src="img/hiks.jpg.jpg"/>
+        <div class="card-body">
+          <h2>Admin 2</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img class="d-block w-100" src="img/siang.jpg.jpg"/>
+        <div class="card-body">
+          <h2>Admin 3</h2>
+        </div>
+      </div>
+    </div>
+
+    <br></br>  
+        <div class="container">
+      <h1 class="display-4 text-center">ADD DATA FAQ</h1>
+    </div>
+  </header>
+      <br></br>
+           <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+         </div>
+       </div>
+      </nav>
+           <br></br>
+               <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Pertanyaan</th>
+                  <th scope="col">Jawaban</th>
+                </tr>
+              </thead>
+                <tbody class="table-group-divider">
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Apa itu Singleton Design Pattern ?</td>
+                   <td>Singkatan Design Pattern sama seperti SESSION pada web akan tetapi ini digunakan pada Desktop Java.C# dan FrameWork Desktop lainnya, yang mana Counstruct memiliki Access private yang menyebabkan tidak melakukan instilization pada kode, ini digunakan untuk memperingati Memory untuk melakukan tugasnya karena kita tidak perlu memanggil class itu dengan cara instilization cukup memanggil method static pada class tersebut</td>
+                </tr>
+                <tbody class="table-group-divider">
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Kenapa ?</td>
+                   <td>Karena</td>
+                </tr>
+              </tbody>
+            </table>
+               <button type="submit" class="btn btn-primary">+ Add Data</button>
+             </form>
+
+             <br></br>
+   <div class="container">
+     <h1 class="display-4 text-center">PELAYANAN</h1>
+   </div>
+ </header>
+   <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">Layanan Perawatan</th>
+        <th scope="col">Hari</th>
+        <th scope="col">Jam Mulai</th>
+        <th scope="col">Jam Selesai</th>
+        <th scope="col">Harga</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>Scaling</td>
+        <td>Senin</td>
+        <td>14:00</td>
+        <td>21:00</td>
+        <td>Rp 200.000</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Pencabutan Gigi</td>
+        <td>Selasa</td>
+        <td>12:00</td>
+        <td>18:00</td>
+        <td>Rp 180.000</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Bleaching gigi</td>
+        <td>Rabu</td>
+        <td>08:00</td>
+        <td>01:00</td>
+        <td>Rp 400.000</td>
+      </tr>
+      <th scope="row">4</th>
+       <td>Implan</td>
+        <td>Kamis</td>
+        <td>12:00</td>
+        <td>18:00</td>
+        <td>Rp 500.000</td>
+      </tr>
+        <th scope="row">5</th>
+        <td>Retainer Lepasan</td>
+        <td>Jum'at</td>
+        <td>08:00</td>
+        <td>01:00</td>
+        <td>Rp 600.000</td>
+      </tr> 
+      <th scope="row">6</th>
+        <td>Lepas Behel</td>
+        <td>Sabtu</td>
+        <td>14:00</td>
+        <td>21:00</td>
+        <td>Rp 300.000</td>
+      </tr> 
+    </tbody>
+  </table>
+
+  <br></br>
+  <div class="container">
+    <h1 class="display-4 text-center">HUBUNGI KAMI</h1>
+  </div>
+<section class="container" id="kontak">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="nama">Nama:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">Email:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pesan">Pesan:</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-comment"></i></span>
+                </div>
+                <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan Anda" required></textarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+    </form>
+</section>
+
+<br></br>  
+<div class="container">
+  <h1 class="display-4 text-center">ADD DATA DOCTOR</h1>
+</div>
+</header>
+    <br></br>
+    <form class="row g-3">
+       <div class="col-md-4">
+         <label for="validationDefault01" class="form-label">Username</label>
+        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+     </div>
+      <div class="col-md-4">
+         <label for="validationDefault02" class="form-label">Password</label>
+        <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+     </div>
+        <div class="col-md-4">
+           <label for="validationDefaultUsername" class="form-label">Email</label>
+           <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+           <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+         </div>
+       </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">Real Name</label>
+        <input type="text" class="form-control" id="validationDefault03" required>
+      </div>
+         <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Gender</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose</option>
+            <option>Laki-laki</option>
+            <option>Perempuan</option>
+          </select>
+        </div>
+       <div class="col-md-3">
+         <label for="validationDefault05" class="form-label">Date</label>
+        <input type="text" class="form-control" id="validationDefault05" required>
+      </div>
+      </form>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">Address</label>
+        <input type="text" class="form-control" id="validationDefault03" required>
+      </div>
+       <div class="col-md-3">
+         <label for="validationDefault05" class="form-label">No.Telpon</label>
+        <input type="text" class="form-control" id="validationDefault05" required>
+      </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupFile01">Picture</label>
+          <input type="file" class="form-control" id="inputGroupFile01">
+        </div>
+         <div class="col-12">
+           <button class="btn btn-primary" type="submit">Add Data</button>
+        </div>
+
+        <br></br>
+        <div class="container">
+          <h1 class="display-4 text-center">PROFIL DOCTOR</h1>
+        </div>
+      </header>
+              <br>
+               <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                  <img class="d-block w-100" src="img/periks.jpg.jpg"/>
+                 <div class="card-body">
+                   <h5 class="card-title">Doktor Gigi Radiologi Kedokteran Gigi</h5>
+                 </div>
+               </div>
+            </div>
+          <div class="col">
+            <div class="card">
+              <img class="d-block w-100" src="img/hiks.jpg.jpg"/>
+              <div class="card-body">
+                <h5 class="card-title">Dokter Gigi Spesialis Penyakit Mulut</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="d-block w-100" src="img/siang.jpg.jpg"/>
+              <div class="card-body">
+                <h5 class="card-title">Dokter Gigi Spesialis Ortodonsi</h5>
+              </div>
+            </div>
+          </div>
+
+           <!-- Peta Google Maps -->
+           <br></br>
+    <div class="container" id="maps">
+      <h1 class="display-4 text-center">LOKASI KAMI</h1> 
+      <br>
+      <div id="google-maps"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6890104826787!2d106.82688961529967!3d-6.208760850728336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a02c9750df64d%3A0x97043f5c12990f1a!2sExample%20Location!5e0!3m2!1sen!2sid!4v1562867247409!5m2!1sen!2sid" frameborder="0"></iframe>
+    </section><!-- Footer -->
+    <footer class="text-center">
+    </footer>
+    </div>
+    
+               
+  
+   
